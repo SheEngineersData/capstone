@@ -1,0 +1,209 @@
+organ,label,path,md5,reason
+Leaf,Bacteria,leaf/Bacteria/20230816_142635.jpg,483d14a9604b25d48b56f492671bf296,"near duplicate, same class"
+Leaf,Bacteria,leaf/Bacteria/IMG_0903.JPG,5856830c51809e18d4c3667d62b7d6f9,"near duplicate, same class"
+Leaf,Bacteria,leaf/Bacteria/IMG_1112.JPG,d233c05c07e2f423b6998c2cf5b9a117,"near duplicate, same class"
+Leaf,Bacteria,leaf/Bacteria/IMG_1166.JPG,af75c2a2229c399ecda8a332fd05f95b,"near duplicate, same class"
+Leaf,Bacteria,leaf/Bacteria/IMG_1173.JPG,302b5d24ecba0f62d68cdffc024d4c7a,"near duplicate, same class"
+Leaf,Bacteria,leaf/Bacteria/IMG_1176.JPG,81258a83eb728efd2739caf9fac9f366,"near duplicate, same class"
+Leaf,Bacteria,leaf/Bacteria/IMG_1178.JPG,f361ced05ba752095c0b4aa84e8493dc,"near duplicate, same class"
+Leaf,Fungi,leaf/Fungi/20230712_115043.jpg,a6f21ce3eba2e1c19a7cb4bcf68c10ad,"exact duplicate, conflicting labels"
+Leaf,Fungi,leaf/Fungi/20230712_150155.jpg,65031a7882ec0736b885b7a44b4e64e3,"exact duplicate, conflicting labels"
+Leaf,Fungi,leaf/Fungi/20230712_153943.jpg,d2cf691bb8d78c4ea55d5226bbf6504c,"near duplicate, same class"
+Leaf,Fungi,leaf/Fungi/20230802_104926298.jpg,41d8dd290e6445476f7b2efb90f4abce,"exact duplicate, conflicting labels"
+Leaf,Fungi,leaf/Fungi/Copy of 20230712_154218.jpg,a9483a152d1f1ada4be9d3cbea56f96d,"exact duplicate, same class"
+Leaf,Fungi,leaf/Fungi/IMG_0141.JPG,da796ecaedcbb8180223efc1142c53df,"near duplicate, same class"
+Leaf,Fungi,leaf/Fungi/IMG_20230815_112512~2.jpg,14318e580512d56a0ca75cca1b1c51d1,"exact duplicate, same class"
+Leaf,Fungi,leaf/Fungi/IMG_20230815_122340~2.jpg,40ce910cd2883c21a26b55cec06e2a1d,"exact duplicate, same class"
+Leaf,Fungi,leaf/Fungi/IMG_20230816_080308_1.jpg,5f61399c6b1257a05a4eaa65d644a665,"near duplicate, same class"
+Leaf,Fungi,leaf/Fungi/IMG_20230816_084638 (1).jpg,d6a359db9b5973eaae0e357f30afdf17,"exact duplicate, same class"
+Leaf,Fungi,leaf/Fungi/IMG_20230816_122345~2.jpg,afefb4d78ccbb8aca148893d3b6db848,"exact duplicate, same class"
+Leaf,Fungi,leaf/Fungi/IMG_9385.JPG,f3e009dae3fea842d6f58f33c2a49568,"near duplicate, same class"
+Leaf,Fungi,leaf/Fungi/IMG_9392.JPG,503a76d346f6c2607fd16d15c4efed82,"near duplicate, same class"
+Leaf,Fungi,leaf/Fungi/IMG_9400.JPG,707102da63c3a80302adc0f3dfc0a0bc,"near duplicate, same class"
+Leaf,Fungi,leaf/Fungi/IMG_9404.JPG,b28f6ce12644871b510a2d37f1ae2990,"near duplicate, same class"
+Leaf,Fungi,leaf/Fungi/IMG_9411.JPG,62d8e428ef11dce3c7bc0cf66bc027fd,"near duplicate, same class"
+Leaf,Fungi,leaf/Fungi/IMG_9423.JPG,1e8421423e7604d461c748a38e5d550e,"near duplicate, same class"
+Leaf,Fungi,leaf/Fungi/IMG_9432.JPG,fccfc07904947676e0f67c0ffb27b5ed,"near duplicate, same class"
+Leaf,Fungi,leaf/Fungi/IMG_9434.JPG,6f8c5fa953f857b4f09e943e93824fa4,"near duplicate, same class"
+Leaf,Healthy,leaf/Healthy/20230712_121645.jpg,26c59a1cd7388df148689ae2a5a2ea4f,"exact duplicate, same class"
+Leaf,Healthy,leaf/Healthy/20230712_130852.jpg,e3e2fb4caf4ddab8e56c24189274dd75,"exact duplicate, conflicting labels"
+Leaf,Nematode,leaf/Nematode/20230712_122808.jpg,68fb9455dba1bbb28d1b947dadb47b1e,"exact duplicate, conflicting labels"
+Leaf,Pest,leaf/Pest/20230712_115043.jpg,a6f21ce3eba2e1c19a7cb4bcf68c10ad,"exact duplicate, conflicting labels"
+Leaf,Pest,leaf/Pest/20230712_122808.jpg,68fb9455dba1bbb28d1b947dadb47b1e,"exact duplicate, conflicting labels"
+Leaf,Pest,leaf/Pest/20230712_123334.jpg,b38af05dd55b6ab85224e6d1bf3ad9ba,"near duplicate, same class"
+Leaf,Pest,leaf/Pest/20230712_130852.jpg,e3e2fb4caf4ddab8e56c24189274dd75,"exact duplicate, conflicting labels"
+Leaf,Pest,leaf/Pest/20230712_150155.jpg,65031a7882ec0736b885b7a44b4e64e3,"exact duplicate, conflicting labels"
+Leaf,Pest,leaf/Pest/20230802_104926298.jpg,41d8dd290e6445476f7b2efb90f4abce,"exact duplicate, conflicting labels"
+Leaf,Pest,leaf/Pest/IMG_0123.JPG,4510646135504f26a721b8d5ff65073e,"exact duplicate, same class"
+Leaf,Pest,leaf/Pest/IMG_0182.JPG,e7ef64156fd7aa77f084327bac68fb46,"near duplicate, same class"
+Leaf,Pest,leaf/Pest/IMG_0205.JPG,3f088aae29dda24bdcf1a707f588bf99,"exact duplicate, same class"
+Leaf,Pest,leaf/Pest/IMG_0208.JPG,7d10c031b5cd44f0db0303cdc30e4c78,"exact duplicate, same class"
+Leaf,Pest,leaf/Pest/IMG_0225.JPG,f03044073290deef92dcbffc25391162,"exact duplicate, same class"
+Leaf,Pest,leaf/Pest/IMG_0610.JPG,3d19e645039bb5b58f4ae2ac7c66a083,"near duplicate, same class"
+Leaf,Pest,leaf/Pest/IMG_0931.JPG,2fee1de60da919ec549266e6cdf6c4a4,"near duplicate, same class"
+Leaf,Pest,leaf/Pest/IMG_20230816_115049~2.jpg,309caeffac718c9280e0c4445475825c,"exact duplicate, conflicting labels"
+Leaf,Pest,leaf/Pest/IMG_9413.JPG,44efd6be49a7f2bd97c99b6caaa2e4cb,"near duplicate, same class"
+Leaf,Pest,leaf/Pest/IMG_9552.JPG,8750f86f105e4948e9492a1f36218326,"near duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_0261 - Copy.JPG,36efb37d7c7c4ccf86941df62f127b58,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_0390.JPG,d72381caf18b77dc82ddff3221f721cd,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_0404.JPG,ee7d8b7ccaaa1eb4865943ef3023fb05,"near duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_4815.JPG,9cc0ca0363d58784b03fe9ce1eb41cfb,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9425.JPG,51dd15ec5748aeaf6202cfbf6520feb8,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9426 (1).JPG,ac4c8f6f230851d0ac45acd97929953d,"near duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9426.JPG,ac4c8f6f230851d0ac45acd97929953d,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9430.JPG,929941591042c47e7642ee47f6baac8c,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9439.JPG,200409ac8fe7879fbf6be04f06fd4038,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9440 (1).JPG,8a5bd192fe96c6b79ce298758e0813b2,"near duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9440.JPG,8a5bd192fe96c6b79ce298758e0813b2,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9443.JPG,c133d6111e00d14ef8f02e2642a77a0e,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9463.JPG,8be8a5a2f66e1bae08c42182ec6fa006,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9464.JPG,a520ff495bc44567826a44c212647645,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9506.JPG,2ba45bc5cf3f0985f5679b3358e0d0e5,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9508.JPG,b37bc6ba2de27f23826a14a5839dc2f8,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9509.JPG,3a1d762f01e822718ecf582549600a19,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9510.JPG,5483a3b5df9df871ee421e85b291570f,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9511.JPG,07befe3880c51ea4ca93b8be9a216588,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9512.JPG,8314c40fac7e3277a84dbfbd61cfe05f,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9514.JPG,06650adf4f5c34ac237ecee5b9364b95,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9517.JPG,e0a3b91ce4c0086c6838cf9041cf8855,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9518.JPG,454decf74d17dafce455c29231937f02,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9519.JPG,ef7974c5d217f66fddd1827f715dbc3c,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9520.JPG,021cacdbce5bddd35134e2633a968108,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9523.JPG,04ae96d5d9548d066fa5e48f4d9f8f9d,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9524.JPG,611da213b01f01a02287b8e2155be5f1,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9526.JPG,c68fa0771fead1074ba9462e303fd37d,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9531.JPG,2a61906c9ab07cdb4a06dc8da55fef18,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9534.JPG,261ae04dfea5930dab0b9a2a0dd78b1c,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9535.JPG,c92ac3659a13730d2f8e7d060011877d,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9536.JPG,1f17fb319a24f1ba4e39de030f76f8eb,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9537.JPG,bd2e75666a71ee8af3ee07b3c785e352,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9538.JPG,48b1dbbd5f6917d708191fba1bcb279c,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9539.JPG,602e4715502feeb630b6ecca85f861d5,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9540.JPG,58e9215015583d4bb0593eb9449ce8cf,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9560.JPG,212109b0263846fcef70775223fcdd03,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9561.JPG,5189264684b7008753bc9e5a2ac7bf64,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9565.JPG,63c335c513948880580666718318f668,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9566.JPG,339860cba4277e7cc149a6b46927bf6b,"exact duplicate, same class"
+Leaf,Phytopthora,leaf/Phytopthora/IMG_9567.JPG,188443b29d56cc5a4584d5f909224c3e,"exact duplicate, same class"
+Leaf,Virus,leaf/Virus/IMG_0465.JPG,16aff2551aa7a736bc286fd7ec0a0565,"near duplicate, same class"
+Leaf,Virus,leaf/Virus/IMG_0934.JPG,d8def0db9058af4531e1f457aab5dfec,"near duplicate, same class"
+Leaf,Virus,leaf/Virus/IMG_0995.JPG,a3d274fa21c9cca564b3c31812aa2cc3,"near duplicate, same class"
+Leaf,Virus,leaf/Virus/IMG_0997.JPG,ab486d8f302917575538b695a5f695d6,"near duplicate, same class"
+Leaf,Virus,leaf/Virus/IMG_1058.JPG,ae11fc8d105b8e2620ea598c85cad94f,"near duplicate, same class"
+Leaf,Virus,leaf/Virus/IMG_1073.JPG,56e663089a179eb93f14bc62abf3f385,"near duplicate, same class"
+Leaf,Virus,leaf/Virus/IMG_1105.JPG,1b6656377237568d8761636599568a6b,"near duplicate, same class"
+Leaf,Virus,leaf/Virus/IMG_1122.JPG,abb0c00086532db650aed2386dc779bd,"near duplicate, same class"
+Leaf,Virus,leaf/Virus/IMG_20230815_152740.jpg,0c25a56c6103095789e3d466843fd12c,"exact duplicate, same class"
+Leaf,Virus,leaf/Virus/IMG_20230816_115049~2.jpg,309caeffac718c9280e0c4445475825c,"exact duplicate, conflicting labels"
+Leaf,Virus,leaf/Virus/IMG_8209.JPG,ba4cf97b95bd8c6c90c9a82349d5feea,"near duplicate, same class"
+Tuber,Blackleg,tuber/Blackleg/15.jpg,60260ee845af85c342b30343764f19e2,"near duplicate, conflicting labels"
+Tuber,Blackleg,tuber/Blackleg/3.jpg,4a0172e667d1ff115a774b5bc3ab803c,"near duplicate, conflicting labels"
+Tuber,Blackleg,tuber/Blackleg/48.jpg,f3b8f59dafa7d4cfef5c6106fd6c411e,"exact duplicate, conflicting labels"
+Tuber,Blackleg,tuber/Blackleg/49.jpg,c730e8a6ac32813141357ecf0c603cab,"exact duplicate, conflicting labels"
+Tuber,Blackleg,tuber/Blackleg/50.jpg,07b790681be2719b61baa3d646330730,"exact duplicate, conflicting labels"
+Tuber,Blackleg,tuber/Blackleg/51.jpg,c7f244a6e83ae7c27ce4ec8305874cd4,"exact duplicate, conflicting labels"
+Tuber,Blackleg,tuber/Blackleg/52.jpg,e01f1e8e4ab0d34342cdf876b14bb6ea,"exact duplicate, conflicting labels"
+Tuber,Blackleg,tuber/Blackleg/53.jpg,0ee88b472c8f83b1a36a65b633b0a85c,"exact duplicate, conflicting labels"
+Tuber,Blackleg,tuber/Blackleg/54.jpg,32d1ce75686fc7541d36ad87b0921b52,"exact duplicate, conflicting labels"
+Tuber,Blackleg,tuber/Blackleg/55.jpg,ef9d7f7582b7c5a82dbd8c01bd8dc202,"exact duplicate, conflicting labels"
+Tuber,Blackleg,tuber/Blackleg/56.jpg,6fc2183b345bf476e1d59d7b6910d9a3,"exact duplicate, conflicting labels"
+Tuber,Blackleg,tuber/Blackleg/57.jpg,f1a3d01616da01d82fcd3cd9783dfb1b,"exact duplicate, conflicting labels"
+Tuber,Blackleg,tuber/Blackleg/58.jpg,06cde88dfde312ed5742933ee8eb47b2,"exact duplicate, conflicting labels"
+Tuber,Blackleg,tuber/Blackleg/59.jpg,2e42b193542d6c949bb69f526f6e8b07,"exact duplicate, conflicting labels"
+Tuber,Blackleg,tuber/Blackleg/60.jpg,1ac95bece4b2c0a01dd753a1e3aa86b7,"exact duplicate, conflicting labels"
+Tuber,Common Scab,tuber/Common Scab/29.jpg,bf77b1ff563871e79d7e8c1cb751f400,"near duplicate, same class"
+Tuber,Common Scab,tuber/Common Scab/48.jpg,f3b8f59dafa7d4cfef5c6106fd6c411e,"exact duplicate, conflicting labels"
+Tuber,Common Scab,tuber/Common Scab/49.jpg,c730e8a6ac32813141357ecf0c603cab,"exact duplicate, conflicting labels"
+Tuber,Common Scab,tuber/Common Scab/50.jpg,07b790681be2719b61baa3d646330730,"exact duplicate, conflicting labels"
+Tuber,Common Scab,tuber/Common Scab/51.jpg,c7f244a6e83ae7c27ce4ec8305874cd4,"exact duplicate, conflicting labels"
+Tuber,Common Scab,tuber/Common Scab/52.jpg,e01f1e8e4ab0d34342cdf876b14bb6ea,"exact duplicate, conflicting labels"
+Tuber,Common Scab,tuber/Common Scab/53.jpg,0ee88b472c8f83b1a36a65b633b0a85c,"exact duplicate, conflicting labels"
+Tuber,Common Scab,tuber/Common Scab/54.jpg,32d1ce75686fc7541d36ad87b0921b52,"exact duplicate, conflicting labels"
+Tuber,Common Scab,tuber/Common Scab/55.jpg,ef9d7f7582b7c5a82dbd8c01bd8dc202,"exact duplicate, conflicting labels"
+Tuber,Common Scab,tuber/Common Scab/56.jpg,6fc2183b345bf476e1d59d7b6910d9a3,"exact duplicate, conflicting labels"
+Tuber,Common Scab,tuber/Common Scab/57.jpg,f1a3d01616da01d82fcd3cd9783dfb1b,"exact duplicate, conflicting labels"
+Tuber,Common Scab,tuber/Common Scab/58.jpg,06cde88dfde312ed5742933ee8eb47b2,"exact duplicate, conflicting labels"
+Tuber,Common Scab,tuber/Common Scab/59.jpg,2e42b193542d6c949bb69f526f6e8b07,"exact duplicate, conflicting labels"
+Tuber,Common Scab,tuber/Common Scab/60.jpg,1ac95bece4b2c0a01dd753a1e3aa86b7,"exact duplicate, conflicting labels"
+Tuber,Dry Rot,tuber/Dry Rot/16.jpg,64dee25a43b9211a9733d1dc69a4ff96,"near duplicate, conflicting labels"
+Tuber,Dry Rot,tuber/Dry Rot/17.jpg,117310325518289668010413ac38b192,"near duplicate, conflicting labels"
+Tuber,Dry Rot,tuber/Dry Rot/3.jpg,b69ba5653d78abdf630e913d5b272e39,"near duplicate, same class"
+Tuber,Dry Rot,tuber/Dry Rot/38.jpg,488687ac9bf3ee12299c22625b6537b1,"near duplicate, same class"
+Tuber,Healthy Potatoes,tuber/Healthy Potatoes/54.jpg,763a8b9be3596cdc93b99ec8c1d29e45,"near duplicate, same class"
+Tuber,Healthy Potatoes,tuber/Healthy Potatoes/6.jpg,82b40e9c9d13c5c9e617a35431171458,"near duplicate, same class"
+Tuber,Healthy Potatoes,tuber/Healthy Potatoes/9.jpg,9058a32d25d356bcc6dc8a535e7ce83f,"near duplicate, same class"
+Tuber,Miscellaneous,tuber/Miscellaneous/1.jpg,75f2f990508b12f9b3b0d45b1fa2544d,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/10.jpg,3e996143e655467495b184f5e8e1f55f,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/11.jpg,1c272e2763837fe6d524bb1c5bda9004,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/12.jpg,58d1085df2900b7597154d7ff45de0ff,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/13.jpg,709b22e58e54950adcaf0c8360a66e1f,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/14.jpg,990590e0047ac68a36910ba48d0d6ea4,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/15.jpg,78f1be54e4331f90d1fa3239b809d091,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/16.jpg,c5f0dd81038427fb1a51e9b0717291a0,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/17.jpg,ec555c607fc0b9c3ab6da17054118472,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/18.jpg,7da8f3eb258531e4a67af7acbbd1701d,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/19.jpg,101db2af7a93f46ea403ea6a36b1e4ab,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/2.jpg,33ad1e19b76fd0b43c12823b5c529f01,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/20.jpg,3dc664ecfacbb802fb0346b9a7742f5f,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/21.jpg,9e2dd6b805e124c2faff94609d4afd82,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/22.jpg,7b4acee37d308ea5f8236c02e5488ce1,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/23.jpg,27c001bf3a4ca731f1aa37d9615df816,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/24.jpg,83eea4c0185b101d92513448fecf28a2,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/25.jpg,b3d6b4a8781c04aaac90f027155f07cb,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/26.jpg,12f508359f1fb95b0823442b17b6a7cc,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/27.jpg,1cf9948bb8105ded668e29d3646b1b9c,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/28.jpg,618f815fea297c9228f6be172899e854,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/29.jpg,0240015617e6bbcb6808438baccc3d19,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/3.jpg,4126775f8762aa4d513d15e205c3b1e1,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/30.jpg,e59111da1cec614271671559c27e2be0,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/31.jpg,2ea8ddc7383495ce51b6eda3ede50c5d,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/32.jpg,151f297d3c5b6ea1ecc2d4b492827592,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/33.jpg,5bb3a6cbb6eba68066bd96d3e22a65b8,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/34.jpg,90615ddf4a73fc8d47def3ea2ebd1cd3,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/35.jpg,6bea2c9c0b3df10811f75bcee5595d77,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/36.jpg,a2e43b3d59fcb41b7ef153f16b0b64b3,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/37.jpg,9c6d7e860c8547400ebedfbbfa822acd,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/38.jpg,5c891973286193070bbd8cf603c48ac5,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/39.jpg,a2553d4d4577dacc3ea86558bd6c8dd9,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/4.jpg,c6fc8400f3353642c3b3e5628264d555,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/40.jpg,140c4dfada06c6e0b379c7ecc6bc3ed9,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/41.jpg,a230200e722a197a566f6c2c134ad2c5,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/42.jpg,b76048b7de8e218509815336992fdd28,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/43.jpg,b5c0890d0b251b2dc01ec89e514e1483,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/44.jpg,7ba7cd91dd1c08636149cc015da5d92b,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/45.jpg,044556babb01688a56d2089e3a6b5e71,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/46.jpg,b2921e15ac191b88e028c08b44caa583,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/47.jpg,e457358ca7f5c24e15ec3750443b54ab,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/48.jpg,f9e906ca7a40abe79eee6650f1850cde,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/49.jpg,bab85e9f521052e9b04e31653cf4b659,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/5.jpg,cf25503155772f1e3ce081edc9b69423,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/50.jpg,47339c7245c6d1e8d5459f31e0b19c5b,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/51.jpg,1a3e891bbdd6cfdf8081c50803a6da36,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/52.jpg,a43275f23bc19f21542fe4059990ae22,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/53.jpg,4bc205007e938de518d7b502fcf10f7d,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/54.jpg,bccce152784648be05622b8035a45b44,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/55.jpg,5ed1d3aa8667285d463f9cc154612a9c,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/56.jpg,6d07b439da6caa856b577e83549cf1c1,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/57.jpg,4457d2f2f5da311221f47714075c8db8,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/58.jpg,bccce152784648be05622b8035a45b44,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/59.jpg,80a56ae8c395110414e8a82d11204bcb,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/6.jpg,83baa7af51d2d4d5ee38cfc2636eb409,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/60.jpg,9d63afe8979e4807bfe83accf1773afe,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/61.jpg,9c78b0df8cb16d091ab05f5d06fc6b80,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/62.jpg,0d810d723912b1b730a8353f2083485d,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/63.jpg,dc90bc3f8a9d51ca163e47cb340c657b,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/64.jpg,d75f1a6d258b86b697227492b8c9eb47,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/65.jpg,ee176abeba5d5552f54edaf867f3df8e,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/66.jpg,7fd4033b4c46963f230bd0e4283163d2,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/67.jpg,ab77551fc9337e3e7bade621914bd32c,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/68.jpg,a3a9d7c4bbdb7d22d5a37923961c93a2,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/69.jpg,ce5801cdb1665d9c6975c91c165c1848,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/7.jpg,9c0d7efb1d27495d2cc339e60741c299,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/70.jpg,9c7bc4c2da8f240d6740bba42c413e72,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/71.jpg,7c96bbf4d74ca97037b57834c1d7db23,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/72.jpg,9f94da88582b77178427f7491a29ca78,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/73.jpg,f993f1394c0680ec2aa812c54c23bce1,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/74.jpg,637b46c6b6b1995a18bc679ef9152455,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/8.jpg,5bfc1f06e6540501190477db12cbf915,excluded class
+Tuber,Miscellaneous,tuber/Miscellaneous/9.jpg,b7cdb55b96950c6047e36ce59aa12123,excluded class
+Tuber,Pink Rot,tuber/Pink Rot/4.jpg,0312cc3ee9a86fe70d76c35f73fcc3be,"near duplicate, same class"

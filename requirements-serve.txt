@@ -1,0 +1,12 @@
+# Model service (used by the Dockerfile)
+tensorflow-cpu==2.21.0
+tf_keras==2.21.0
+numpy>=2.0
+pandas==2.2.3
+scikit-learn>=1.5
+scipy>=1.13
+pillow>=10
+fastapi>=0.110
+uvicorn>=0.29
+python-multipart>=0.0.9
+evidently==0.7.23

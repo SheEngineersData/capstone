@@ -1,0 +1,10 @@
+\begin{tabular}{lrrc}
+\toprule
+Setting ($\alpha=0.5$) & parameters sent & MB per client per round & macro-F1 \\
+\midrule
+Full network from v0 (default) & 2,210,256 & 8.84 & 0.800 $\pm$ 0.005 (n=2) \\
+Last blocks from v0 & 430,096 & 1.72 & 0.803 $\pm$ 0.003 (n=2) \\
+Classifier head only from v0 & 20,496 & 0.08 & 0.796 $\pm$ 0.003 (n=2) \\
+Full network, no central stage (empty head) & 2,210,256 & 8.84 & 0.287 $\pm$ 0.000 (n=2) \\
+\bottomrule
+\end{tabular}

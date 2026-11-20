@@ -1,0 +1,60 @@
+% Theme adapted from the unofficial SMU Beamer template by Felix Nie (CC BY 4.0), https://github.com/felixnie/smu-beamer
+% Colours and layout kept; the SMU logo and campus background are replaced by the Strathmore University logo.
+
+\usepackage{booktabs}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\setlength{\abovedisplayskip}{1pt}\setlength{\belowdisplayskip}{1pt}\setlength{\abovedisplayshortskip}{0pt}\setlength{\belowdisplayshortskip}{0pt}
+\newcommand{\body}{\fontsize{6.6}{7.9}\selectfont}
+\newcommand{\bodys}{\fontsize{6.0}{7.2}\selectfont}
+\newcommand{\chip}[2]{\colorbox{#1}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\textcolor{white}{\textbf{\scriptsize #2}}}}}
+\hyphenpenalty=10000 \exhyphenpenalty=10000 \tolerance=2000 \emergencystretch=2em
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric}
+\setbeamerfont{footnote}{size=\tiny}
+\newcommand{\citep}[1]{(#1)}
+\usetheme{Madrid}
+\definecolor{navy}{RGB}{21, 28, 85}
+\definecolor{gold}{RGB}{198, 146, 0}
+\setbeamercolor*{structure}{bg=navy, fg=navy}
+\setbeamercolor*{palette primary}{use=structure, fg=white, bg=navy}
+\setbeamercolor*{palette secondary}{use=structure, fg=navy, bg=white}
+\setbeamercolor*{palette tertiary}{use=structure, fg=white, bg=navy}
+\setbeamercolor{frametitle}{bg=navy, fg=white}
+\setbeamercolor*{titlelike}{parent=palette primary}
+\setbeamercolor{section in head/foot}{fg=white, bg=gold}
+\setbeamercolor{headline}{fg=white, bg=gold}
+\setbeamercolor{item projected}{bg=gold}
+\setbeamertemplate{enumerate items}{bg=gold}
+\setbeamercolor{itemize item}{fg=gold}
+\setbeamercolor{itemize subitem}{fg=gold}
+\setbeamercolor{button}{bg=gold}
+\setbeamercolor{section in toc}{fg=black}
+\setbeamercolor{block title}{bg=gold, fg=white}
+\setbeamercolor{block body}{bg=gold!20}
+\setbeamercolor{block title alerted}{bg=orange, fg=white}
+\setbeamercolor{block body alerted}{bg=orange!10}
+\setbeamercolor{block title example}{bg=navy, fg=white}
+\setbeamercolor{block body example}{bg=navy!10}
+
+\usefonttheme{default}
+\usepackage{palatino}
+\usepackage[default]{opensans}
+\useinnertheme{circles}
+\useoutertheme{miniframes}
+\setbeamertemplate{headline}{
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\paperwidth,ht=7.0ex]{headline}
+    \insertnavigation{\paperwidth}\vspace*{2.0ex}
+  \end{beamercolorbox}}
+\setbeamertemplate{navigation symbols}{}
+\setbeamerfont{institute}{size=\scriptsize}
+\setbeamerfont{date}{size=\footnotesize}
+\setbeamerfont{author}{size=\footnotesize}
+\setbeamersize{text margin left=1cm, text margin right=1.5cm}
+
+
+\newcommand{\compact}{\fontsize{9.4}{11.2}\selectfont}
+\newcommand{\bridge}[1]{\vfill\par{\footnotesize\itshape\color{navy}$\rightarrow$\ #1}}
+

@@ -1,0 +1,17 @@
+,Leaf/Bacteria,Leaf/Fungi,Leaf/Healthy,Leaf/Nematode,Leaf/Pest,Leaf/Phytopthora,Leaf/Virus,Tuber/Black Scurf,Tuber/Blackleg,Tuber/Blackspot Bruising,Tuber/Brown Rot,Tuber/Common Scab,Tuber/Dry Rot,Tuber/Healthy Potatoes,Tuber/Pink Rot,Tuber/Soft Rot
+Leaf/Bacteria,78,1,0,0,3,1,1,0,0,0,0,0,0,0,0,0
+Leaf/Fungi,0,79,0,1,15,9,5,0,0,0,0,0,0,0,0,0
+Leaf/Healthy,0,2,25,0,0,0,3,0,0,0,0,0,0,0,0,0
+Leaf/Nematode,0,2,0,8,0,0,0,0,0,0,0,0,0,0,0,0
+Leaf/Pest,0,15,6,2,60,2,4,0,0,0,0,0,0,0,0,0
+Leaf/Phytopthora,1,5,0,0,0,40,0,0,0,0,0,0,0,0,0,0
+Leaf/Virus,2,3,3,0,1,1,68,0,0,0,0,0,0,0,0,0
+Tuber/Black Scurf,0,0,0,0,0,0,0,6,0,0,0,0,1,0,0,0
+Tuber/Blackleg,0,0,0,0,0,0,0,0,5,0,0,1,1,0,0,0
+Tuber/Blackspot Bruising,0,0,0,0,0,0,0,0,0,112,0,0,1,0,0,3
+Tuber/Brown Rot,0,0,0,0,0,0,0,0,0,0,15,0,0,0,0,1
+Tuber/Common Scab,0,0,0,0,0,0,0,1,0,0,0,5,1,0,0,0
+Tuber/Dry Rot,0,0,0,0,0,0,0,1,3,3,0,1,189,1,0,5
+Tuber/Healthy Potatoes,0,0,0,0,0,0,0,0,0,0,0,0,0,122,0,0
+Tuber/Pink Rot,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0
+Tuber/Soft Rot,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,82

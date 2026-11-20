@@ -1,0 +1,28 @@
+{
+ "Leaf": {
+  "raw": 3076,
+  "after_unreadable": 3076,
+  "after_excluded": 3076,
+  "excluded_class_files": 0,
+  "after_exact_cross": 3064,
+  "after_exact_same": 3015,
+  "after_near_cross": 3015,
+  "final": 2979,
+  "n_classes": 7,
+  "imbalance_raw": 11.0,
+  "imbalance_clean": 10.9
+ },
+ "Tuber": {
+  "raw": 3905,
+  "after_unreadable": 3905,
+  "after_excluded": 3831,
+  "excluded_class_files": 74,
+  "after_exact_cross": 3805,
+  "after_exact_same": 3805,
+  "after_near_cross": 3801,
+  "final": 3794,
+  "n_classes": 9,
+  "imbalance_raw": 27.7,
+  "imbalance_clean": 30.0
+ }
+}

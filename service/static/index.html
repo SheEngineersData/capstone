@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Potato check</title>
+<style>
+@font-face{font-family:"Atkinson Hyperlegible";font-weight:400;font-display:swap;src:url(/static/fonts/atkinson-400.woff2) format("woff2")}
+@font-face{font-family:"Atkinson Hyperlegible";font-weight:700;font-display:swap;src:url(/static/fonts/atkinson-700.woff2) format("woff2")}
+@font-face{font-family:"Bricolage Grotesque";font-weight:500 800;font-display:swap;src:url(/static/fonts/bricolage.woff2) format("woff2")}
+
+:root{
+  --paper:#F4F6F1; --paper-deep:#E6EBE0; --ink:#1D2B22; --ink-soft:#52615A; --line:#D3DACB;
+  --flower:#5E3C99; --flower-deep:#4A2D7C;
+  --leaf:#2F7D4F; --amber:#C98A12; --amber-text:#80530A; --blight:#B4452F;
+  --display:"Bricolage Grotesque","Atkinson Hyperlegible",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#171F1A; --paper-deep:#222C25; --ink:#E9EFE6; --ink-soft:#A3B2A8; --line:#34423A;
+        --flower:#B79CF0; --flower-deep:#CDB8FA; --leaf:#5CC083; --amber:#E0A53A; --amber-text:#E8B554; --blight:#F0836B}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;color-scheme:light dark}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--body)}
+h1,h2,h3,p{margin:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--flower);outline-offset:3px;border-radius:6px}
+
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header.top{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:22px 0 8px}
+.mark{font:700 22px/1 var(--display);letter-spacing:-.01em}
+.modelnote{font-size:14px;color:var(--ink-soft);text-align:right}
+
+main.grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:44px;padding:18px 0 56px;align-items:start}
+@media (max-width:860px){main.grid{grid-template-columns:minmax(0,1fr);gap:26px}}
+
+/* ---------- stage ---------- */
+.stage{position:relative;aspect-ratio:4/3;background:var(--paper-deep);border-radius:16px;overflow:hidden;display:grid;place-items:center}
+.stage.drag{outline:3px dashed var(--flower);outline-offset:-10px}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+#heat{opacity:0}
+#heat.on{opacity:1;transition:opacity .9s ease .15s}
+.empty{position:relative;padding:28px;text-align:center;max-width:30rem}
+.empty h1{font:700 clamp(30px,5vw,46px)/1.04 var(--display);letter-spacing:-.025em;margin-bottom:14px}
+.empty p{color:var(--ink-soft);margin:0 auto 22px;max-width:26rem}
+.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn{appearance:none;border:2px solid var(--flower);background:transparent;color:var(--flower-deep);padding:12px 20px;border-radius:10px;font-weight:700;cursor:pointer;min-height:48px}
+.btn.primary{background:var(--flower);color:#fff}
+.btn:hover{background:var(--flower-deep);border-color:var(--flower-deep);color:#fff}
+.stage[data-state="busy"] .empty,.stage[data-state="done"] .empty{display:none}
+.working{display:none;position:absolute;left:0;right:0;bottom:0;padding:12px 16px;background:rgba(29,43,34,.78);color:#fff;font-weight:700}
+.stage[data-state="busy"] .working{display:block}
+
+.lens{display:none;margin-top:12px;gap:4px;background:var(--paper-deep);border-radius:10px;padding:4px;width:max-content}
+.lens.show{display:flex}
+.lens button{border:0;background:transparent;padding:8px 14px;border-radius:7px;cursor:pointer;font-weight:700;color:var(--ink-soft)}
+.lens button[aria-pressed="true"]{background:var(--paper);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+
+.samples{margin-top:22px}
+.samples p{color:var(--ink-soft);font-size:15px;margin-bottom:10px;max-width:38rem}
+.strip{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 8px;scrollbar-width:thin}
+.strip button{flex:0 0 auto;width:68px;height:68px;border:2px solid transparent;border-radius:10px;padding:0;overflow:hidden;cursor:pointer;background:var(--paper-deep)}
+.strip button img{width:100%;height:100%;object-fit:cover;display:block}
+.strip button:hover{border-color:var(--flower)}
+
+/* ---------- answer ---------- */
+.panel{min-height:320px}
+.tips h2,.verdict{font:700 clamp(30px,4.2vw,42px)/1.05 var(--display);letter-spacing:-.02em}
+.tips h2{font-size:26px;margin-bottom:14px}
+.tips ul{margin:0;padding-left:1.2em;color:var(--ink-soft)}
+.tips li{margin:0 0 8px}
+.hide{display:none!important}
+
+.organ{color:var(--ink-soft);font-weight:700;margin-bottom:6px}
+.verdict{margin-bottom:6px}
+.sure{font-size:19px;margin-bottom:22px}
+.sure b{font-weight:700}
+.tier-very{color:var(--leaf)} .tier-possible{color:var(--amber-text)} .tier-unsure{color:var(--blight)}
+
+.gauge{position:relative;margin:0 0 34px}
+.track{display:flex;height:16px;border-radius:8px;overflow:hidden}
+.track i{display:block;height:100%}
+.track .u{width:50%;background:var(--blight);opacity:.82}
+.track .p{width:40%;background:var(--amber)}
+.track .v{width:10%;background:var(--leaf)}
+.pin{position:absolute;top:-7px;left:0;width:4px;height:30px;margin-left:-2px;background:var(--ink);border-radius:2px;box-shadow:0 0 0 3px var(--paper)}
+.pin.go{left:var(--pos);transition:left 1s cubic-bezier(.2,.8,.2,1)}
+.ticks{position:relative;height:20px;margin-top:8px;font-size:14px;color:var(--ink-soft)}
+.ticks span{position:absolute;top:0;white-space:nowrap}
+.ticks .t1{left:0} .ticks .t2{left:50%} .ticks .t3{right:0}
+
+.advice{margin-bottom:22px;max-width:34rem}
+.others{list-style:none;margin:0 0 22px;padding:0;border-top:1px solid var(--line)}
+.others li{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid var(--line)}
+.others .nm{flex:1 1 auto}
+.others .bar{flex:0 0 90px;height:6px;border-radius:3px;background:var(--paper-deep);overflow:hidden}
+.others .bar i{display:block;height:100%;background:var(--ink-soft)}
+.others .pc{flex:0 0 44px;text-align:right;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.truth{margin-bottom:18px;padding-left:12px;border-left:4px solid var(--line)}
+.truth.ok{border-color:var(--leaf)} .truth.miss{border-color:var(--blight)}
+.fine{font-size:14px;color:var(--ink-soft);max-width:34rem}
+details{margin-top:14px;font-size:14px;color:var(--ink-soft)}
+details pre{background:var(--paper-deep);padding:12px;border-radius:8px;overflow:auto;font-size:12.5px;line-height:1.45;color:var(--ink)}
+.err{border-left:4px solid var(--blight);padding-left:14px}
+.err h2{font:700 24px/1.15 var(--display);margin-bottom:6px}
+
+@media (prefers-reduced-motion:reduce){#heat.on{transition:none}.pin.go{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="mark">Potato check</div>
+    <div class="modelnote" id="modelnote"></div>
+  </header>
+
+  <main class="grid">
+    <section aria-label="Photo">
+      <div class="stage" id="stage" data-state="idle">
+        <img id="photo" alt="" hidden>
+        <img id="heat" alt="Heat-map over the photo showing where the model looked" hidden>
+        <div class="empty">
+          <h1>Check a potato photo</h1>
+          <p>Photograph one leaf or one tuber. You get the likely problem, how sure the model is, and where in the photo it looked.</p>
+          <div class="actions">
+            <button class="btn primary" id="take" type="button">Take a photo</button>
+            <button class="btn" id="choose" type="button">Choose a photo</button>
+          </div>
+        </div>
+        <div class="working" role="status">Looking at the photo...</div>
+      </div>
+      <div class="lens" id="lens" role="group" aria-label="What to show on the photo">
+        <button type="button" id="lensHeat" aria-pressed="true">Where it looked</button>
+        <button type="button" id="lensPhoto" aria-pressed="false">Photo</button>
+      </div>
+      <div class="samples" id="samples" hidden>
+        <p>No potato to hand? Try one of the held-out test photos. The model has never seen them.</p>
+        <div class="strip" id="strip"></div>
+      </div>
+      <input type="file" id="fileTake" accept="image/*" capture="environment" hidden>
+      <input type="file" id="fileChoose" accept="image/*" hidden>
+    </section>
+
+    <section class="panel" id="panel" aria-live="polite">
+      <div class="tips" id="tips">
+        <h2>For a clear answer</h2>
+        <ul>
+          <li>Use daylight and keep the photo sharp.</li>
+          <li>Fill the frame with one leaf or one tuber.</li>
+          <li>Keep the affected area in view, not just the healthy part.</li>
+        </ul>
+        <p class="fine" style="margin-top:22px">A screening aid, not a diagnosis. Confirm with an extension officer before treating a crop or discarding seed.</p>
+      </div>
+      <div id="result" class="hide"></div>
+    </section>
+  </main>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const LEAF = {Bacteria:"Bacterial disease", Fungi:"Fungal disease", Healthy:"Healthy leaf", Nematode:"Nematode damage", Pest:"Pest damage", Phytopthora:"Phytophthora", Virus:"Virus damage"};
+function nice(label){
+  const [organ, name] = label.split("/");
+  if (organ === "Leaf") return {organ, name: LEAF[name] || name};
+  return {organ, name: name === "Healthy Potatoes" ? "Healthy tuber" : name};
+}
+const withOrgan = l => { const n = nice(l); return /leaf|tuber/i.test(n.name) ? n.name : n.name + " (" + n.organ.toLowerCase() + ")"; };
+const pct = p => p > 0 && p < 0.01 ? "<1%" : Math.round(p * 100) + "%";
+const tierClass = t => t === "very likely" ? "tier-very" : t === "possible" ? "tier-possible" : "tier-unsure";
+const tierWord = t => t.charAt(0).toUpperCase() + t.slice(1);
+
+const stage = $("#stage"), photo = $("#photo"), heat = $("#heat"), lens = $("#lens");
+let objectUrl = null;
+
+fetch("/model").then(r => r.json()).then(m => {
+  $("#modelnote").textContent = "Model " + m.version + ", macro-F1 " + m.test.macro_f1.toFixed(3) + " on held-out photos";
+}).catch(() => {});
+
+fetch("/samples.json").then(r => r.json()).then(list => {
+  if (!list.length) return;
+  $("#samples").hidden = false;
+  list.forEach(s => {
+    const b = document.createElement("button");
+    b.type = "button"; b.setAttribute("aria-label", "Try held-out photo: " + withOrgan(s.truth));
+    b.innerHTML = '<img alt="" src="' + s.url + '">';
+    b.onclick = async () => { const blob = await (await fetch(s.url)).blob(); send(blob, s.truth); };
+    $("#strip").appendChild(b);
+    if (new URLSearchParams(location.search).get("try") === s.url.split("/").pop().replace(".jpg", "")) b.click();  // shareable demo link, e.g. /?try=Leaf_Healthy
+  });
+}).catch(() => {});
+
+$("#take").onclick = () => $("#fileTake").click();
+$("#choose").onclick = () => $("#fileChoose").click();
+for (const id of ["#fileTake", "#fileChoose"]) $(id).onchange = e => { if (e.target.files[0]) send(e.target.files[0]); e.target.value = ""; };
+stage.addEventListener("dragover", e => { e.preventDefault(); stage.classList.add("drag"); });
+stage.addEventListener("dragleave", () => stage.classList.remove("drag"));
+stage.addEventListener("drop", e => { e.preventDefault(); stage.classList.remove("drag"); if (e.dataTransfer.files[0]) send(e.dataTransfer.files[0]); });
+
+function showLens(which){
+  heat.classList.toggle("on", which === "heat");
+  $("#lensHeat").setAttribute("aria-pressed", which === "heat");
+  $("#lensPhoto").setAttribute("aria-pressed", which === "photo");
+}
+$("#lensHeat").onclick = () => showLens("heat");
+$("#lensPhoto").onclick = () => showLens("photo");
+
+async function send(blob, truth){
+  if (objectUrl) URL.revokeObjectURL(objectUrl);
+  objectUrl = URL.createObjectURL(blob);
+  photo.src = objectUrl; photo.hidden = false;
+  heat.hidden = true; heat.classList.remove("on"); lens.classList.remove("show");
+  stage.dataset.state = "busy";
+  const fd = new FormData(); fd.append("file", blob, "photo.jpg");
+  let r, d;
+  try { r = await fetch("/predict?heatmap=true&top=3", {method: "POST", body: fd}); d = await r.json(); }
+  catch (e) { return fail("The service did not answer. Check the connection and try again."); }
+  if (!r.ok) return fail(typeof d.detail === "string" ? d.detail : "The photo could not be read. Send a JPEG or PNG.");
+  show(d, truth);
+}
+
+function fail(msg){
+  stage.dataset.state = "idle"; photo.hidden = true;
+  $("#tips").classList.add("hide");
+  const box = $("#result"); box.classList.remove("hide");
+  box.innerHTML = '<div class="err"><h2>That photo did not work</h2><p></p></div>';
+  box.querySelector("p").textContent = msg + " Choose another photo to try again.";
+}
+
+function show(d, truth){
+  const n = nice(d.label);
+  heat.src = "data:image/png;base64," + d.heatmap_png_base64; heat.hidden = false;
+  stage.dataset.state = "done"; lens.classList.add("show");
+  $("#tips").classList.add("hide");
+  const rows = d.top.slice(1).map(t => '<li><span class="nm">' + withOrgan(t.label) + '</span><span class="bar"><i style="width:' + Math.round(t.probability * 100) + '%"></i></span><span class="pc">' + pct(t.probability) + '</span></li>').join("");
+  let truthHtml = "";
+  if (truth) {
+    const ok = truth === d.label, t = nice(truth);
+    truthHtml = '<p class="truth ' + (ok ? "ok" : "miss") + '">Held-out test photo. True class: ' + withOrgan(truth) + '. ' + (ok ? "The model got it right." : "The model got it wrong, and said so with a lower tier.") + '</p>';
+    if (!ok && d.tier === "very likely") truthHtml = truthHtml.replace("and said so with a lower tier", "even at a high tier");
+  }
+  const raw = JSON.stringify(Object.assign({}, d, {heatmap_png_base64: "(png omitted)"}), null, 1);
+  const box = $("#result"); box.classList.remove("hide");
+  box.innerHTML =
+    '<p class="organ">' + n.organ + '</p>' +
+    '<h2 class="verdict">' + n.name + '</h2>' +
+    '<p class="sure ' + tierClass(d.tier) + '"><b>' + tierWord(d.tier) + '.</b> <span style="color:var(--ink)">The model is ' + pct(d.confidence) + ' sure.</span></p>' +
+    '<div class="gauge"><div class="track"><i class="u"></i><i class="p"></i><i class="v"></i></div><div class="pin" id="pin" style="--pos:' + (d.confidence * 100).toFixed(1) + '%"></div>' +
+    '<div class="ticks" aria-hidden="true"><span class="t1">Unsure</span><span class="t2">Possible</span><span class="t3">Very likely</span></div></div>' +
+    '<p class="advice">' + d.advice + '</p>' + truthHtml +
+    '<ul class="others">' + rows + '</ul>' +
+    '<p class="fine">A screening aid, not a diagnosis.</p>' +
+    '<details><summary>Raw answer</summary><pre></pre></details>';
+  box.querySelector("pre").textContent = raw;
+  requestAnimationFrame(() => requestAnimationFrame(() => { $("#pin").classList.add("go"); showLens("heat"); }));
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  test-and-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12", cache: pip}
+      - run: pip install -r requirements-dev.txt matplotlib
+      - run: python -m pytest -q tests
+      - name: Every pipeline stage on the mini dataset
+        run: make smoke
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker compose build
+      - run: |
+          docker compose up -d
+          for i in $(seq 1 30); do curl -sf localhost:8000/healthz && break; sleep 5; done
+          curl -sf -F file=@samples/Leaf_Healthy.jpg localhost:8000/predict

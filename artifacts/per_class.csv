@@ -1,0 +1,17 @@
+,precision,recall,f1-score,support
+Leaf/Bacteria,0.889,0.952,0.92,84.0
+Leaf/Fungi,0.645,0.633,0.639,109.0
+Leaf/Healthy,0.771,0.9,0.831,30.0
+Leaf/Nematode,0.643,0.9,0.75,10.0
+Leaf/Pest,0.694,0.562,0.621,89.0
+Leaf/Phytopthora,0.618,0.739,0.673,46.0
+Leaf/Virus,0.833,0.769,0.8,78.0
+Tuber/Black Scurf,0.778,1.0,0.875,7.0
+Tuber/Blackleg,0.5,0.714,0.588,7.0
+Tuber/Blackspot Bruising,0.966,0.974,0.97,116.0
+Tuber/Brown Rot,1.0,1.0,1.0,16.0
+Tuber/Common Scab,0.75,0.429,0.545,7.0
+Tuber/Dry Rot,0.975,0.961,0.968,203.0
+Tuber/Healthy Potatoes,0.967,0.975,0.971,122.0
+Tuber/Pink Rot,0.857,0.75,0.8,8.0
+Tuber/Soft Rot,0.929,0.94,0.935,84.0

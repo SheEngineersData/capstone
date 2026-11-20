@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    image: potato-fl-api:1.0
+    ports: ["8000:8000"]
+    volumes:
+      - requests:/data          # request log used for drift monitoring survives restarts
+    restart: unless-stopped
+volumes:
+  requests:

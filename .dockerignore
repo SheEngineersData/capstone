@@ -1,0 +1,9 @@
+work/
+data/
+docs/
+results/
+tests/
+.venv*/
+__pycache__/
+*.pdf
+artifacts/v0/
